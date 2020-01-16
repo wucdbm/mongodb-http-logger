@@ -1,5 +1,15 @@
 <?php
 
+/*
+ * This file is part of the Wucdbm MongoDBHttpLogger package.
+ *
+ * Copyright (c) Martin Kirilov.
+ *
+ * Author Martin Kirilov <wucdbm@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 use Wucdbm\Component\MongoDBHttpLogger\Document\Request;
 
@@ -26,5 +36,4 @@ class CurlCommand {
 
         return sprintf('curl %s %s', $request->getUrl(), implode(' ', $pieces));
     }
-
 }
