@@ -11,7 +11,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Wucdbm\Component\MongoDBHttpLogger\Logger;
+namespace Wucdbm\Component\MongoDBHttpLogger;
 
 use Wucdbm\Component\MongoDBHttpLogger\Document\Request;
 
