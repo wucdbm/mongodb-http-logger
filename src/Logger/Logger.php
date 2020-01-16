@@ -44,8 +44,6 @@ class Logger {
     protected function persist(Log $log): void {
         $this->dm->persist($log);
 
-        $this->dm->persist($log);
-
         if ($request = $log->getRequest()) {
             $this->dm->persist($request);
         }
