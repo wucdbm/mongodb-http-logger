@@ -11,6 +11,8 @@
  * file that was distributed with this source code.
  */
 
+namespace Wucdbm\Component\MongoDBHttpLogger\Logger;
+
 use Wucdbm\Component\MongoDBHttpLogger\Document\Request;
 
 class CurlCommand {
