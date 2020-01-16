@@ -107,7 +107,7 @@ class HttpMessage {
         return $this;
     }
 
-    public function getContentType(): ?int {
+    public function getContentType(): int {
         return $this->contentType;
     }
 
