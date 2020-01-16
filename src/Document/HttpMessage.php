@@ -39,7 +39,7 @@ class HttpMessage {
     private $content;
 
     /**
-     * @var array
+     * @var array|null
      * @ODM\Field(type="hash")
      */
     private $headers = [];
@@ -97,7 +97,7 @@ class HttpMessage {
         return $this;
     }
 
-    public function getHeaders(): array {
+    public function getHeaders(): ?array {
         return $this->headers;
     }
 
@@ -107,7 +107,7 @@ class HttpMessage {
         return $this;
     }
 
-    public function getContentType(): int {
+    public function getContentType(): ?int {
         return $this->contentType;
     }
 
