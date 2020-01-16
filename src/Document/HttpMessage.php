@@ -33,7 +33,7 @@ class HttpMessage {
     private $id;
 
     /**
-     * @var string
+     * @var string|null
      * @ODM\Field(type="string")
      */
     private $content;
