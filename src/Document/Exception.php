@@ -104,7 +104,7 @@ class Exception {
         $this->date = new \DateTime();
     }
 
-    public function getId(): string {
+    public function getId(): ?string {
         return $this->id;
     }
 
@@ -114,7 +114,7 @@ class Exception {
         return $this;
     }
 
-    public function getMessage(): string {
+    public function getMessage(): ?string {
         return $this->message;
     }
 
@@ -124,7 +124,7 @@ class Exception {
         return $this;
     }
 
-    public function getCode(): string {
+    public function getCode(): ?string {
         return $this->code;
     }
 
@@ -134,7 +134,7 @@ class Exception {
         return $this;
     }
 
-    public function getFile(): string {
+    public function getFile(): ?string {
         return $this->file;
     }
 
@@ -144,7 +144,7 @@ class Exception {
         return $this;
     }
 
-    public function getLine(): int {
+    public function getLine(): ?int {
         return $this->line;
     }
 
@@ -154,7 +154,7 @@ class Exception {
         return $this;
     }
 
-    public function getStackTraceString(): string {
+    public function getStackTraceString(): ?string {
         return $this->stackTraceString;
     }
 
@@ -194,7 +194,7 @@ class Exception {
         return $this;
     }
 
-    public function getClass(): string {
+    public function getClass(): ?string {
         return $this->class;
     }
 

@@ -33,7 +33,7 @@ class Request extends HttpMessage {
     private $urlHash;
 
     /**
-     * @var string
+     * @var string|null
      * @ODM\Field(type="string")
      */
     private $method;
@@ -58,7 +58,7 @@ class Request extends HttpMessage {
         return $this;
     }
 
-    public function getMethod(): string {
+    public function getMethod(): ?string {
         return $this->method;
     }
 

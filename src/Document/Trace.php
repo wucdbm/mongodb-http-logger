@@ -74,7 +74,7 @@ class Trace {
      */
     protected $args;
 
-    public function getId(): string {
+    public function getId(): ?string {
         return $this->id;
     }
 
@@ -154,7 +154,7 @@ class Trace {
         return $this;
     }
 
-    public function getArgs(): ?string {
+    public function getArgs(): ?array {
         return $this->args;
     }
 

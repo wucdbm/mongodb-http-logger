@@ -21,12 +21,12 @@ use Doctrine\ODM\MongoDB\Mapping\Annotations as ODM;
 class Response extends HttpMessage {
 
     /**
-     * @var int
+     * @var int|null
      * @ODM\Field(type="int")
      */
     private $statusCode;
 
-    public function getStatusCode(): int {
+    public function getStatusCode(): ?int {
         return $this->statusCode;
     }
 
