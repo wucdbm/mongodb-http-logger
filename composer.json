@@ -1,0 +1,33 @@
+{
+    "name": "wucdbm/mongodb-http-logger",
+    "type": "library",
+    "description": "A collection of Doctrine ODM Documents and a base Logger class implementation to log your HTTP Request/Response pairs & associated errors in a more convenient way",
+    "keywords": ["wucdbm", "http logger", "http request response log", "http log bundle", "symfony http log"],
+    "authors": [
+        {
+            "name": "Martin Kirilov",
+            "email": "wucdbm@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "ext-mongodb": "*",
+        "doctrine/mongodb-odm-bundle": "^4.1",
+        "guzzlehttp/guzzle": "^6.5.2",
+        "psr/http-message": "^1.0.1",
+        "symfony/error-handler": "~4.4|~5.0",
+        "symfony/http-foundation": "~4.4|~5.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.8",
+        "wucdbm/php-cs-fixers": "~0.2"
+    },
+    "autoload": {
+        "psr-4": { "Wucdbm\\Component\\MongoDBHttpLogger\\": "src" }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "license": "MIT"
+}
