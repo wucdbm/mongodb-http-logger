@@ -108,7 +108,7 @@ class Exception {
         return $this->id;
     }
 
-    public function setId(string $id): self {
+    public function setId(?string $id): self {
         $this->id = $id;
 
         return $this;
@@ -118,7 +118,7 @@ class Exception {
         return $this->message;
     }
 
-    public function setMessage(string $message): self {
+    public function setMessage(?string $message): self {
         $this->message = $message;
 
         return $this;
@@ -128,7 +128,7 @@ class Exception {
         return $this->code;
     }
 
-    public function setCode(string $code): self {
+    public function setCode(?string $code): self {
         $this->code = $code;
 
         return $this;
@@ -138,7 +138,7 @@ class Exception {
         return $this->file;
     }
 
-    public function setFile(string $file): self {
+    public function setFile(?string $file): self {
         $this->file = $file;
 
         return $this;
@@ -148,7 +148,7 @@ class Exception {
         return $this->line;
     }
 
-    public function setLine(int $line): self {
+    public function setLine(?int $line): self {
         $this->line = $line;
 
         return $this;
@@ -158,7 +158,7 @@ class Exception {
         return $this->stackTraceString;
     }
 
-    public function setStackTraceString(string $stackTraceString): self {
+    public function setStackTraceString(?string $stackTraceString): self {
         $this->stackTraceString = $stackTraceString;
 
         return $this;
@@ -178,7 +178,7 @@ class Exception {
         return $this->date;
     }
 
-    public function setDate(\DateTime $date): self {
+    public function setDate(?\DateTime $date): self {
         $this->date = $date;
 
         return $this;
@@ -198,7 +198,7 @@ class Exception {
         return $this->class;
     }
 
-    public function setClass(string $class): self {
+    public function setClass(?string $class): self {
         $this->class = $class;
 
         return $this;
