@@ -62,7 +62,7 @@ class Request extends HttpMessage {
         return $this->method;
     }
 
-    public function setMethod(string $method): self {
+    public function setMethod(?string $method): self {
         $this->method = $method;
 
         return $this;

@@ -30,7 +30,7 @@ class Response extends HttpMessage {
         return $this->statusCode;
     }
 
-    public function setStatusCode(int $statusCode): self {
+    public function setStatusCode(?int $statusCode): self {
         $this->statusCode = $statusCode;
 
         return $this;

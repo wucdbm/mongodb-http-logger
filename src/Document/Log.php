@@ -70,7 +70,7 @@ class Log {
         return $this->id;
     }
 
-    public function setId(string $id) {
+    public function setId(?string $id) {
         $this->id = $id;
 
         return $this;
@@ -80,7 +80,7 @@ class Log {
         return $this->date;
     }
 
-    public function setDate(\DateTime $date): Log {
+    public function setDate(?\DateTime $date): Log {
         $this->date = $date;
 
         return $this;

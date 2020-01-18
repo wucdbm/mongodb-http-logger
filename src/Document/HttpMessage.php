@@ -81,7 +81,7 @@ class HttpMessage {
         return $this->id;
     }
 
-    public function setId(string $id): self {
+    public function setId(?string $id): self {
         $this->id = $id;
 
         return $this;
@@ -101,7 +101,7 @@ class HttpMessage {
         return $this->headers;
     }
 
-    public function setHeaders(array $headers): self {
+    public function setHeaders(?array $headers): self {
         $this->headers = $headers;
 
         return $this;
@@ -111,7 +111,7 @@ class HttpMessage {
         return $this->contentType;
     }
 
-    public function setContentType(int $contentType): self {
+    public function setContentType(?int $contentType): self {
         $this->contentType = $contentType;
 
         return $this;
@@ -121,7 +121,7 @@ class HttpMessage {
         return $this->date;
     }
 
-    public function setDate(\DateTime $date): self {
+    public function setDate(?\DateTime $date): self {
         $this->date = $date;
 
         return $this;
