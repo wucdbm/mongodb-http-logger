@@ -28,7 +28,7 @@ class HttpMessage {
 
     /**
      * @var string
-     * @ODM\Id
+     * @ODM\Id(strategy="UUID")
      */
     private $id;
 

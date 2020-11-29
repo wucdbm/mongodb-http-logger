@@ -24,7 +24,7 @@ class Exception {
 
     /**
      * @var string
-     * @ODM\Id
+     * @ODM\Id(strategy="UUID")
      */
     protected $id;
 

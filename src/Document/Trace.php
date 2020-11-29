@@ -22,7 +22,7 @@ class Trace {
 
     /**
      * @var string
-     * @ODM\Id
+     * @ODM\Id(strategy="UUID")
      */
     protected $id;
 
