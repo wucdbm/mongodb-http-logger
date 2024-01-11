@@ -14,7 +14,7 @@
 namespace Wucdbm\Component\MongoDBHttpLogger\Logger;
 
 use Doctrine\Bundle\MongoDBBundle\ManagerRegistry;
-use Doctrine\ODM\MongoDB\DocumentManager;
+use Doctrine\Persistence\ObjectManager;
 use GuzzleHttp\Exception\RequestException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -22,12 +22,8 @@ use Throwable;
 use Wucdbm\Component\MongoDBHttpLogger\Document\Log;
 
 class Logger {
-
-    /** @var DocumentManager */
-    private $dm;
-
-    /** @var LoggerHelper */
-    private $helper;
+    private ObjectManager $dm;
+    private LoggerHelper $helper;
 
     public function __construct(ManagerRegistry $registry, string $class) {
         $dm = $registry->getManagerForClass($class);
